@@ -25,6 +25,7 @@ session_start();
         <p><a href="log_off.php"><input type="button" id="loginGoogle" class="btn btn-primary" value="Log Off" /></a></p>
         <p><a href="youtube_analytics">YouTube Analytics API</a></p>
         <p><a href="voice_to_text">Speech to Text API</a></p>
+        <p><a href="text_to_speech">Text to Speech API</a></p>
         <?php
     }
     ?>

@@ -1,5 +1,8 @@
 <?php
+// Start Server Session
 session_start();
+
+// Display All Errors (For Easier Development)
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -36,9 +39,9 @@ $parameters = '{
   }';
 
 $response = $_cURL->post_request("https://speech.googleapis.com/v1p1beta1/speech:recognize", $parameters);
-$_SESSION['response'] = $response;
 
-//echo '<pre>R';
+// Debug
+//echo '<pre>';
 //print_r($response);
 //echo '</pre>';
 
@@ -47,4 +50,3 @@ $async_response->response_received_data = 'Audio data was received';
 $async_response->response_received_transcript = $response->results[0]->alternatives[0]->transcript;
 $async_response = json_encode($async_response);
 echo $async_response;
-//}
