@@ -30,8 +30,8 @@ $parameters = '{
   }';
 
 // Make cURL call and store response on variable and on SESSION
-//$response = $_cURL->post_request("https://texttospeech.googleapis.com/v1beta1/text:synthesize", $parameters);
-//$_SESSION['response'] = $response;
+$response = $_cURL->post_request("https://texttospeech.googleapis.com/v1beta1/text:synthesize", $parameters);
+$_SESSION['response'] = $response;
 
 // Alternative Way of Storing Audio to a File
 //$content = base64_decode($_SESSION['response']->audioContent);
