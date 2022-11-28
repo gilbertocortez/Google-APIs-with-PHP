@@ -26,6 +26,7 @@ session_start();
         <p><a href="youtube_analytics">YouTube Analytics API</a></p>
         <p><a href="voice_to_text">Speech to Text API</a></p>
         <p><a href="text_to_speech">Text to Speech API</a></p>
+        <p><a href="translation">Translation API</a></p>
         <?php
     }
     ?>

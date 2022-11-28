@@ -15,6 +15,7 @@ $client->addScope('https://www.googleapis.com/auth/yt-analytics-monetary.readonl
 $client->addScope('https://www.googleapis.com/auth/youtube');
 $client->addScope('https://www.googleapis.com/auth/youtubepartner');
 $client->addScope('https://www.googleapis.com/auth/cloud-platform');
+$client->addScope('https://www.googleapis.com/auth/cloud-translation');
 
 // Set redirect Url after user log in in Google server
 $client->setRedirectUri($url . '_dev/youtube/google_api/handlers/log_in_scope_request.php');

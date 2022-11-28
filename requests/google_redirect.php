@@ -6,14 +6,18 @@ $url = 'https://interactiveutopia.com/';
 
 // Initiate Google Client API Class
 $client = new Google_Client();
+
 // Provide authentication token
 $client->setAuthConfig('../_private/client_secret.json');
+
 // Request required API scope
 $client->addScope('https://www.googleapis.com/auth/yt-analytics.readonly');
 $client->addScope('https://www.googleapis.com/auth/yt-analytics-monetary.readonly');
 $client->addScope('https://www.googleapis.com/auth/youtube');
 $client->addScope('https://www.googleapis.com/auth/youtubepartner');
 $client->addScope('https://www.googleapis.com/auth/cloud-platform');
+$client->addScope('https://www.googleapis.com/auth/cloud-translation');
+
 // Provide return redirect url
 $client->setRedirectUri($url . '_dev/youtube/google_api/handlers/log_in_scope_request.php');
 // offline access will give you both an access and refresh token so that
