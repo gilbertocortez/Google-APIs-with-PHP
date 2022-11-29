@@ -16,7 +16,7 @@ error_reporting(E_ALL);
 
 // Include cURL object file
 require '../includes/curl.class.php';
-// Initiate cURL Server bject
+// Initiate cURL Server object
 $_cURL = new CurlServer($_SESSION['google_access_tokens']['access_token']);
 
 // Build cURL Request Parameters
